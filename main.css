@@ -1,0 +1,315 @@
+.juggler_wrapper{
+    min-height: 100vh;
+    position: relative;
+}
+.juggler__man{
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    top: 115px;
+    left: 200px;
+}
+.juggler__hand {
+    width: 120px;
+    height: 2px;
+    background: #000;
+    border: 1px solid #000;
+    position: absolute;
+}
+.juggler__hand_left{
+    top: 312px;
+    left: 252px;
+    transform: rotate(78deg);
+}
+.juggler__hand_right{
+    top: 312px;
+    left: 402px;
+    transform: rotate(90deg);
+ }
+.juggler__wrist{
+    width: 80px;
+    height: 2px;
+    background: #000;
+    border: 1px solid #000;
+    position: absolute;
+}
+.juggler__wrist-left{
+    top: 430px;
+    left: 275px
+}
+.juggler__wrist-right{
+    top: 433px;
+    left: 327px;
+}
+.juggler__ball{
+    width: 30px;
+    height: 30px;
+    background: #ff0000;
+    border-radius: 30px;
+    position: absolute;
+}
+.juggler__ball-right{
+    top: 425px;
+    left: 442px;
+}
+.juggler__ball-left{
+    top: 424px;
+    left: 295px;
+}
+.animation_hand_left {
+    animation: hand_left 1s infinite ease ;
+}
+.animation_hand_right {
+    animation: hand_right 1s infinite ease;
+}
+.animation_wrist-left {
+    animation: wrist-left 1s infinite ease;
+}
+.animation_wrist-right {
+    animation: wrist-right 1s infinite ease;
+}
+.animation_ball-left {
+     animation: ball-left 2s infinite ease ;
+}
+.animation_ball-left2 {
+    animation: ball-left2 2s  infinite ease;
+}
+.animation_ball-right {
+     animation: ball-right 2s infinite ease;
+ }
+.animation_ball-right2 {
+    animation: ball-right2 2s infinite ease;
+}
+
+
+@keyframes hand_left {
+    0%{
+        transform: rotate(102deg);
+        transform-origin: left center;
+    }
+    25% {
+        transform: rotate(90deg);
+        transform-origin: left center;
+
+    }
+
+    50% {
+        transform: rotate(78deg);
+        transform-origin: left center;
+
+    }
+    75% {
+        transform: rotate(90deg);
+        transform-origin: left center;
+
+    }
+    100% {
+        transform: rotate(102deg);
+        transform-origin: left center;
+
+    }
+}
+@keyframes hand_right {
+    0%{
+        transform: rotate(102deg);
+        transform-origin: left center;
+    }
+    25% {
+        transform: rotate(90deg);
+        transform-origin: left center;
+
+    }
+    50% {
+        transform: rotate(78deg);
+        transform-origin: left center;
+
+    }
+
+    75% {
+        transform: rotate(90deg);
+        transform-origin: left center;
+
+    }
+    100% {
+        transform: rotate(102deg);
+        transform-origin: left center;
+
+    }
+}
+@keyframes wrist-left {
+    0%{
+        transform: rotate(0deg);
+        transform-origin: left center;
+        left: 230px;
+    }
+    25%{
+
+        left: 254px;
+    }
+
+    50% {
+        left: 276px;
+        transform: rotate(-180deg);
+        transform-origin: left center;
+
+    }
+    75%{
+
+        left: 254px;
+    }
+
+    100% {
+        left: 230px;
+        transform: rotate(-360deg);
+        transform-origin: left center;
+
+    }
+}
+@keyframes wrist-right {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: left center;
+        left: 377px;
+    }
+    25% {
+        left: 404px;
+    }
+    50% {
+        transform: rotate(180deg);
+        transform-origin: left center;
+        left: 427px;
+    }
+    75% {
+        left: 404px;
+    }
+    100% {
+        transform: rotate(360deg);
+        transform-origin: left center;
+        left: 377px;
+    }
+}
+
+@keyframes ball-left {
+    0% {
+        top: 384px;
+        left: 295px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+
+    25% {
+        top: 174px;
+        left: 265px;
+
+    }
+    50% {
+        top: 174px;
+        left: 225px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+    75% {
+        top: 384px;
+        left: 180px;
+
+    }
+
+    100% {
+        top: 384px;
+        left: 295px;
+
+    }
+}
+@keyframes ball-left2 {
+    0% {
+        top: 174px;
+        left: 225px;
+    }
+
+    25% {
+        top: 384px;
+        left: 180px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+    50% {
+        top: 384px;
+        left: 295px;
+    }
+    75% {
+        top: 174px;
+        left: 265px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+
+    100% {
+        top: 174px;
+        left: 225px;
+
+    }
+}
+
+@keyframes ball-right {
+    0% {
+        top: 384px;
+        left: 442px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+
+    25% {
+        top: 384px;
+        left:340px;
+
+    }
+    50% {
+        top: 174px;
+        left: 365px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+    75% {
+        top: 174px;
+        left: 415px;
+
+    }
+
+    100% {
+        top: 384px;
+        left:442px;
+
+    }
+}
+@keyframes ball-right2 {
+    0% {
+        top: 174px;
+        left: 365px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+
+    25% {
+        top: 174px;
+        left: 415px;
+
+
+    }
+    50% {
+        top: 384px;
+        left: 442px;
+        /*transform: rotate(20deg);*/
+        /*transform-origin: -40px center;*/
+    }
+    75% {
+        top: 384px;
+        left: 340px;
+
+    }
+
+    100% {
+        top: 174px;
+        left: 365px;
+
+    }
+}
